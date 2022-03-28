@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Deals from './components/Deals/Deals';
+import Chart from './components/LineChart/LineChart';
+import Navbar from './components/Navbar/Navbar';
+import SimpleBarChart from './components/SimpleBarChart/SimpleBarChart';
+import SimplePieChart from './components/SimplePieChart/SimplePieChart';
+import UseSpring from './components/UseSpring/UseSpring';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <Deals></Deals>
+      <Chart></Chart>
+      <SimpleBarChart></SimpleBarChart>
+      <SimplePieChart></SimplePieChart>
+      <UseSpring></UseSpring>
     </div>
   );
 }
